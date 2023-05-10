@@ -7,15 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
-<body>
-    <h1 class="header">Can you beat the MACHINE?</h1>
-    <h2 class="header2">Choose Rock, Paper, or Scissors</h2>
-    <div class="container">
-        <div class="rock">
-            <img src="" alt="">
+<body>    
+    <div class="youWon">
+        <h1>You Win!</h1>
+    </div>
+    <div class="youLost">
+        <h1>You Lost!</h1>
+    </div>
+    <h1 class="header">Rock Paper Scissors</h1>
+
+    <div class="score">
+        <h2 class="wins">Wins : <span class="winScore">0</span></h2>
+        <h2 class="Draws">Draws : <span class="drawScore">0</span></h2>
+        <h2 class="Losses">Losses : <span class="lossScore">0</span></h2>
+    </div>
+    <div class="players">
+        <div class="you">
+            <h1>You</h1>
+            <div class="buttons">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissors">Scissors</button>
+            </div>
+            <div class="youImages">
+                <img class="playerImages" src="/images/rock.png" alt="">
+                <img class="playerImages" src="/images/paper.png" alt="">
+                <img class="playerImages" src="/images/scissors.png" alt="">
+            </div>
         </div>
-        <div class="paper"></div>
-        <div class="scissors"></div>
+        <div class="computer">
+            <h1>Computer</h1>
+            <div class="buttons"></div>
+            <div class="compImages">
+                <img class="computerImages" src="/images/rock.png" alt="">
+                <img class="computerImages" src="/images/paper.png" alt="">
+                <img class="computerImages" src="/images/scissors.png" alt="">
+            </div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>

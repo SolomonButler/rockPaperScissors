@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score{
+    display: flex;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.players{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 200px;
+    margin-top: 25px;
+}
+
+.you, .computer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    height: 60px;
+}
+
+button{
+    border: 1px solid white;
+    font-size: 1.2rem;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: transparent;
+    margin: 0 10px;
+    transition: ease-in-out 0.2s;
+    margin-top: 10px;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+.youImages, .compImages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.playerImages, .computerImages{
+    position: absolute;
+    bottom: 0;
+}
+
+img{
+    width: 100px;
+    display: none;
+}
+
+.youWon, .youLost{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #838383;
+    width: 100vw;
+    height: 100vh;
+}
+
+
